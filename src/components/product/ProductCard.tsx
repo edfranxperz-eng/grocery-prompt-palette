@@ -26,11 +26,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   };
 
   const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('es-CO', {
-      style: 'currency',
-      currency: 'COP',
-      minimumFractionDigits: 0,
-    }).format(price);
+    return `Bs ${price.toFixed(2)}`;
   };
 
   return (

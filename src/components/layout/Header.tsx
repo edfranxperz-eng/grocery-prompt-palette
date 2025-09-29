@@ -25,7 +25,7 @@ export const Header: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 text-xl font-bold text-primary">
             <Store className="h-8 w-8" />
-            <span>Abarrotes Mi Tienda</span>
+            <span>Tienda Don Nico</span>
           </Link>
 
           {/* Desktop Navigation */}

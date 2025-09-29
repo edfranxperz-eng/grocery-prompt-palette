@@ -9,122 +9,210 @@ import lecheAlpina from '@/assets/products/leche-alpina.jpg';
 import detergenteAriel from '@/assets/products/detergente-ariel.jpg';
 
 export const categories: Category[] = [
-  { id: 'despensa', name: 'Despensa', icon: '🥫', color: 'bg-primary' },
-  { id: 'snacks', name: 'Snacks', icon: '🍪', color: 'bg-secondary' },
-  { id: 'bebidas', name: 'Bebidas', icon: '🥤', color: 'bg-trust' },
-  { id: 'limpieza', name: 'Limpieza', icon: '🧽', color: 'bg-accent' },
-  { id: 'lacteos', name: 'Lácteos', icon: '🥛', color: 'bg-primary-glow' },
-  { id: 'carnes', name: 'Carnes', icon: '🥩', color: 'bg-secondary' },
+  { id: 'refrescos', name: 'Refrescos', icon: '🥤', color: 'bg-trust' },
+  { id: 'dulces', name: 'Dulces', icon: '🍬', color: 'bg-secondary' },
+  { id: 'queques', name: 'Queques', icon: '🧁', color: 'bg-primary' },
+  { id: 'gelatinas', name: 'Gelatinas', icon: '🍮', color: 'bg-accent' },
+  { id: 'helados', name: 'Helados', icon: '🍦', color: 'bg-primary-glow' },
+  { id: 'chicles', name: 'Chicles', icon: '🍃', color: 'bg-warm' },
+  { id: 'galletas', name: 'Galletas', icon: '🍪', color: 'bg-secondary' },
+  { id: 'pipocas', name: 'Pipocas', icon: '🍿', color: 'bg-trust' },
 ];
 
 export const products: Product[] = [
+  // Refrescos
   {
     id: '1',
-    name: 'Arroz Diana 1kg',
-    price: 3500,
-    image: arrozDiana,
-    category: 'despensa',
-    description: 'Arroz de primera calidad, ideal para toda la familia. Grano largo y suave.',
-    inStock: true,
-  },
-  {
-    id: '2',
-    name: 'Aceite Girasol 1L',
-    price: 8500,
-    image: aceiteGirasol,
-    category: 'despensa',
-    description: 'Aceite de girasol 100% puro, perfecto para cocinar y freír.',
-    inStock: true,
-  },
-  {
-    id: '3',
     name: 'Coca-Cola 600ml',
-    price: 2800,
+    price: 6.50,
     image: cocaCola,
-    category: 'bebidas',
+    category: 'refrescos',
     description: 'La bebida refrescante original. Perfecta para acompañar tus comidas.',
     inStock: true,
   },
   {
-    id: '4',
-    name: 'Galletas Festival',
-    price: 2200,
-    image: galletasFestival,
-    category: 'snacks',
-    description: 'Deliciosas galletas dulces, perfectas para compartir en familia.',
+    id: '2',
+    name: 'Pepsi 500ml',
+    price: 6.00,
+    image: cocaCola, // Placeholder
+    category: 'refrescos',
+    description: 'Refresco de cola con sabor único y refrescante.',
     inStock: true,
   },
   {
+    id: '3',
+    name: 'Fanta Naranja 500ml',
+    price: 5.50,
+    image: cocaCola, // Placeholder
+    category: 'refrescos',
+    description: 'Refresco de naranja con sabor natural y vitamina C.',
+    inStock: true,
+  },
+  {
+    id: '4',
+    name: 'Sprite 500ml',
+    price: 5.50,
+    image: cocaCola, // Placeholder
+    category: 'refrescos',
+    description: 'Refresco de lima-limón, refrescante y sin cafeína.',
+    inStock: true,
+  },
+  
+  // Dulces
+  {
     id: '5',
-    name: 'Leche Alpina 1L',
-    price: 4200,
-    image: lecheAlpina,
-    category: 'lacteos',
-    description: 'Leche entera de la mejor calidad, rica en calcio y proteínas.',
+    name: 'Chocolate Sublime',
+    price: 3.50,
+    image: galletasFestival, // Placeholder
+    category: 'dulces',
+    description: 'Clásico chocolate boliviano con maní tostado.',
     inStock: true,
   },
   {
     id: '6',
-    name: 'Detergente Ariel',
-    price: 12500,
-    image: detergenteAriel,
-    category: 'limpieza',
-    description: 'Detergente en polvo de alta calidad para una limpieza profunda.',
+    name: 'Caramelos Mentitas',
+    price: 2.00,
+    image: galletasFestival, // Placeholder
+    category: 'dulces',
+    description: 'Caramelos de menta refrescantes, ideales para después de comer.',
     inStock: true,
   },
-  // Additional products for demonstration
   {
     id: '7',
-    name: 'Sal La Fina 500g',
-    price: 1200,
-    image: arrozDiana, // Placeholder - would generate separate image
-    category: 'despensa',
-    description: 'Sal refinada de mesa, indispensable en tu cocina.',
+    name: 'Gomitas Haribo',
+    price: 4.50,
+    image: galletasFestival, // Placeholder
+    category: 'dulces',
+    description: 'Deliciosas gomitas de frutas en diferentes sabores.',
     inStock: true,
   },
+  
+  // Queques
   {
     id: '8',
-    name: 'Chocolate Jet',
-    price: 1800,
+    name: 'Queque Montecarlo',
+    price: 12.00,
     image: galletasFestival, // Placeholder
-    category: 'snacks',
-    description: 'Chocolate cremoso y delicioso para disfrutar en cualquier momento.',
+    category: 'queques',
+    description: 'Queque esponjoso con relleno de manjar y coco.',
     inStock: true,
   },
   {
     id: '9',
-    name: 'Agua Cristal 600ml',
-    price: 1500,
-    image: cocaCola, // Placeholder
-    category: 'bebidas',
-    description: 'Agua pura y cristalina, perfecta para hidratarte.',
+    name: 'Queque de Chocolate',
+    price: 15.00,
+    image: galletasFestival, // Placeholder
+    category: 'queques',
+    description: 'Queque húmedo de chocolate con chispas de chocolate.',
     inStock: true,
   },
+  
+  // Gelatinas
   {
     id: '10',
-    name: 'Jabón Rey 150g',
-    price: 3200,
+    name: 'Gelatina Royal Fresa',
+    price: 3.00,
     image: detergenteAriel, // Placeholder
-    category: 'limpieza',
-    description: 'Jabón de tocador con aroma fresco y duradero.',
+    category: 'gelatinas',
+    description: 'Gelatina en polvo sabor fresa, fácil de preparar.',
     inStock: true,
   },
   {
     id: '11',
-    name: 'Queso Colanta 250g',
-    price: 6800,
+    name: 'Gelatina Royal Limón',
+    price: 3.00,
+    image: detergenteAriel, // Placeholder
+    category: 'gelatinas',
+    description: 'Gelatina en polvo sabor limón, refrescante y deliciosa.',
+    inStock: true,
+  },
+  
+  // Helados
+  {
+    id: '12',
+    name: 'Helado Pil Vainilla',
+    price: 8.50,
     image: lecheAlpina, // Placeholder
-    category: 'lacteos',
-    description: 'Queso fresco y cremoso, perfecto para tus preparaciones.',
+    category: 'helados',
+    description: 'Helado cremoso de vainilla, perfecto para cualquier momento.',
     inStock: true,
   },
   {
-    id: '12',
-    name: 'Jugo Hit Naranja 200ml',
-    price: 2100,
-    image: cocaCola, // Placeholder
-    category: 'bebidas',
-    description: 'Delicioso jugo de naranja natural, rico en vitamina C.',
+    id: '13',
+    name: 'Paleta Bon Ice',
+    price: 2.50,
+    image: lecheAlpina, // Placeholder
+    category: 'helados',
+    description: 'Paleta de hielo con sabores frutales variados.',
+    inStock: true,
+  },
+  
+  // Chicles
+  {
+    id: '14',
+    name: 'Chicle Boomer',
+    price: 1.50,
+    image: galletasFestival, // Placeholder
+    category: 'chicles',
+    description: 'Chicle globero con sabor a tutti frutti.',
+    inStock: true,
+  },
+  {
+    id: '15',
+    name: 'Chicle Trident Menta',
+    price: 4.00,
+    image: galletasFestival, // Placeholder
+    category: 'chicles',
+    description: 'Chicle sin azúcar con sabor a menta fresca.',
+    inStock: true,
+  },
+  
+  // Galletas
+  {
+    id: '16',
+    name: 'Galletas Chiquilín',
+    price: 5.50,
+    image: galletasFestival,
+    category: 'galletas',
+    description: 'Galletas dulces tradicionales bolivianas, perfectas para el té.',
+    inStock: true,
+  },
+  {
+    id: '17',
+    name: 'Galletas Oreo',
+    price: 7.00,
+    image: galletasFestival, // Placeholder
+    category: 'galletas',
+    description: 'Galletas de chocolate con crema, el clásico mundial.',
+    inStock: true,
+  },
+  
+  // Pipocas
+  {
+    id: '18',
+    name: 'Pipocas Tostaduría',
+    price: 4.50,
+    image: arrozDiana, // Placeholder
+    category: 'pipocas',
+    description: 'Pipocas saladas crujientes, perfectas para cualquier ocasión.',
+    inStock: true,
+  },
+  {
+    id: '19',
+    name: 'Pipocas Dulces',
+    price: 5.00,
+    image: arrozDiana, // Placeholder
+    category: 'pipocas',
+    description: 'Pipocas caramelizadas con azúcar, irresistibles.',
+    inStock: true,
+  },
+  {
+    id: '20',
+    name: 'Chifles La Especial',
+    price: 6.50,
+    image: arrozDiana, // Placeholder
+    category: 'pipocas',
+    description: 'Chifles crujientes de plátano verde, snack boliviano tradicional.',
     inStock: true,
   },
 ];
